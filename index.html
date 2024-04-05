@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it" class="js-loading">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Meteo | Coding Week</title>
+
+  <!-- Icon -->
+  <link rel="image" href="images/icon.png">
+
+  <!-- Font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Stile -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JavaScript -->
+  <script src="suggestions.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- data temperatures -->
+    <div class="temperature_section">
+      <h2 class="location"></h2>
+      <h2 class="temperature"></h2>
+      <div class="sub_temperature_section">
+        <h4 class="max"></h4>
+        <h4 class="min"></h4>
+      </div>
+    </div>
+    <!-- Searching and title sidebar -->
+    <div class="sidebar">
+      <div class"search">
+        <input type="text" id="locationInput" placeholder="enter a location">
+        <button id="searchButton">Search</button>
+        <div class="recentSearch">
+          <br><br>
+          Recent Search
+          <hr>
+          <div class="buttonsRecent">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <!-- Javascript -->
+  <script src="script.js"></script>
+</body>
+
+
+</html>

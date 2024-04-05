@@ -1,0 +1,165 @@
+body {
+	display: flex;
+	background-color: rgb(44, 44, 44);
+	justify-content: center;
+}
+
+/* .container {
+
+	background-image: url("images/weatherCard.jpg");
+	background-size: 800px 650px;
+	width: 800px;
+	height: 650px;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+	border-radius: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin: 25px;
+} */
+.container {
+	background-image: url("images/weatherCard.jpg");
+	background-size: cover;
+	/* Imposta la dimensione dell'immagine di sfondo per coprire tutto il container */
+	width: 80%;
+	/* Imposta la larghezza del container al 80% della larghezza della finestra */
+	max-width: 800px;
+	/* Imposta la larghezza massima del container */
+	height: 650px;
+	/* Imposta l'altezza automatica per mantenere l'aspetto proporzionale dell'immagine di sfondo */
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+	border-radius: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin: 25px auto;
+	/* Centra il container verticalmente e orizzontalmente */
+}
+
+
+.sidebar {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: auto;
+	height: 300px;
+	padding-top: 15px;
+	padding-right: 15px;
+	border-radius: 0 0 16px 16px;
+	background-color: rgba(56, 73, 88, 0.575);
+
+}
+
+.search {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline: none;
+
+}
+
+.title {
+	color: white;
+	display: flex;
+	justify-content: center;
+	padding-right: 15%;
+}
+
+#locationInput {
+	background: none;
+	border-radius: 8px;
+	height: 35px;
+	outline: none;
+	border-color: white;
+	color: white;
+}
+
+::placeholder {
+	color: white;
+	opacity: 0.7;
+}
+
+#searchButton {
+	height: 35px;
+	border-radius: 8px;
+	width: 120px;
+	color: orange;
+	border: none;
+
+}
+
+.recentSearch {
+	color: white;
+}
+
+.temperature_section {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.sub_temperature_section {
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+	justify-content: center;
+
+}
+
+.buttonsRecent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+
+}
+
+/* .recentButtons {
+	border-radius: 8px;
+	height: 25px;
+	width: 100%;
+	background-color: rgba(56, 73, 88, 0.658);
+	color: white;
+	border: none;
+
+}
+
+.recentButtons:hover {
+	background-color: white;
+	color: orange;
+	cursor: pointer;
+	width: 105%;
+
+} */
+
+/* Define keyframes for the animation */
+@keyframes buttonHover {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.1);
+	}
+}
+
+.recentCityButton {
+	border-radius: 8px;
+	height: 25px;
+	width: 100%;
+	background-color: rgba(56, 73, 88, 0.658);
+	color: white;
+	border: none;
+	transition: background-color 0.3s, color 0.3s;
+	/* Add transitions for smooth color change */
+}
+
+.recentCityButton:hover {
+	background-color: white;
+	color: orange;
+	cursor: pointer;
+	animation: buttonHover 0.3s forwards;
+	/* Apply animation on hover */
+}
