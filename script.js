@@ -11,15 +11,14 @@ const container = document.querySelector('.container');
 const RecentButtons = document.querySelector('.buttonsRecent');
 var CityList = [];
 var FoundCity = false;
-// Aggiorna la larghezza del container in base alla larghezza della finestra
-function updateContainerWidth() {
-    const windowWidth = window.innerWidth; // Window width
-    const maxWidth = 800; // Maximum width for container
-    const desiredWidth = Math.min(windowWidth * 0.8, maxWidth); // Desired width for container as 80% of window width or maximum width
-    const inputWidthPercentage = 70; // Desired width for input field as a percentage of the container's width
-    const searchWidthPercentage = 20; // Desired width for search button as a percentage of the container's width
 
-    // Select the container, input field, and search button
+function updateContainerWidth() {
+    const windowWidth = window.innerWidth; 
+    const maxWidth = 800; 
+    const desiredWidth = Math.min(windowWidth * 0.8, maxWidth); 
+    const inputWidthPercentage = 70; 
+    const searchWidthPercentage = 20; 
+    
     const container = document.querySelector('.container');
     const input = document.querySelector('#locationInput');
     const search = document.querySelector('#searchButton');
@@ -44,7 +43,7 @@ function updateContainerWidth() {
 
 // Call the function initially and when the window is resized
 window.addEventListener('resize', updateContainerWidth);
-updateContainerWidth(); // Call the function initially
+updateContainerWidth(); 
 
 
 input.addEventListener('keydown', function (event) {
